@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="dataset.json"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="diku.js"></script>
+  <style>
+  html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #121212;
+    color:aliceblue;
+    font-family: sans-serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+  }
+
+  video {
+    position: absolute;
+    width: 750;
+    height: 560;
+  }
+
+  canvas {
+    position: absolute;
+  }
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: calc(1.45rem - 1px);
+    background: aliceblue;
+    border: none;
+    height: 1px;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class='container'>
+    <h1> do i know you? </h1> 
+    <hr></hr>
+    <div>
+      <video id="video" width="750" height="560" autoplay muted></video>
+      <canvas></canvas>
+    </div>
+  </div>
+</body>
+
+</html>
